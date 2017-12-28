@@ -77,29 +77,26 @@ function changeColors(color){
 }
 
 function pickColor(){
-	// generate a random number from 0 to 5 (cuz colors.length is 6 and Math.random generates number from 0 to 0.99999)
+	// generate a random number from 0 to 5
 	var random = Math.floor(Math.random() * colors.length);
-	// returns an array's element with index from 0 to 5 and gives it to span colorDisplay
+	// return an array's element with index from 0 to 5 and pass it to span colorDisplay
 	return colors[random];
 }
 
 function generateRandomColors(num){
-	// make an array
 	var arr = [];
-	// repeat num times
 	for (var i = 0; i < num; i++){
-		// get random color and push into arr
 		arr.push(randomColor())
 	}
 	return arr;
 };
 
 function randomColor(){
-	// pick a "red" from 0 - 255
+	// pick "red" from 0 - 255
 	var r = Math.floor(Math.random() * 256);
-	// pick a "green" from 0 - 255
+	// pick "green" from 0 - 255
 	var g = Math.floor(Math.random() * 256);
-	// pick a "blue" from 0 - 255
+	// pick "blue" from 0 - 255
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + ", " + g + ", " + b + ")";
 };
