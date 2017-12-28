@@ -61,7 +61,6 @@ button {
 	color: steelblue;
 	letter-spacing: 1px;
 	font-size: inherit;
-	/*transition is how much seconds it takes to apply style (kinda animation*/
 	transition: all 0.7s;
 	-webkit-transition: all 0.7s;
 	-moz-transition: all 0.7s;
